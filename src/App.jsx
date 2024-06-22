@@ -44,7 +44,8 @@ function App() {
       <div className="Formulario">
         <h1>Mensajería</h1>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="usuario-datos">
+            <div>
             <label>Usuario:</label>
             <input
               type="text"
@@ -52,15 +53,16 @@ function App() {
               value={formData.usuario}
               onChange={handleChange}
             />
-          </div>
-          <div>
-            <label>Correo Electrónico:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
+            </div>
+            <div>
+              <label>Correo Electrónico:</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <label>Asunto:</label>
